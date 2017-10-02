@@ -9,7 +9,7 @@ package dao;
  *
  * @author wildc
  */
-class Usuario {
+public class Usuario {
   
     private String nombre;
     private String ApMat;

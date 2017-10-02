@@ -13,8 +13,8 @@ public interface UsuariosDao {
 	public void crearUser(Usuario u);
 	public Usuario editaUser(String u);
         public void eliminaUser(String u);
-        public boolean validauser(String user);//Para verificar para registrarte el usuiario  exista o no
-	public boolean validacorreo(String correo);//Para verificar que cuando se registre el usuario y correo no sean iguales
+        public boolean buscauser(String user);//Para verificar para registrarte el usuiario  exista o no
+	public boolean buscacorreo(String correo);//Para verificar que cuando se registre el usuario y correo no sean iguales
 	public boolean login(String user, String Pass);// Verificar que usuario y contrasela sean correctos
         public boolean bloqueado(String user);
 }
