@@ -11,10 +11,11 @@ package dao;
  */
 public interface UsuariosDao {
 	public void crearUser(Usuario u);
-	public Usuario editaUser(String u);
-        public void eliminaUser(String u);
-        public boolean buscauser(String user);//Para verificar para registrarte el usuiario  exista o no
-	public boolean buscacorreo(String correo);//Para verificar que cuando se registre el usuario y correo no sean iguales
-	public boolean login(String user, String Pass);// Verificar que usuario y contrasela sean correctos
-        public boolean bloqueado(String user);
+	public boolean editaUser(Usuario u);
+        public String[] consultaUser(String us); //Recuperamos todos los campos del usuario para despues mostarlos y sean modificados
+        public void eliminaUser(Usuario u);
+        public boolean buscauser(Usuario u);//Para verificar para registrarte el usuiario  exista o no
+	public boolean buscacorreo(Usuario u);//Para verificar que cuando se registre el usuario y correo no sean iguales
+	public boolean login(String us, String pass);// Recibir el userName y el pass para validar y entrar
+        public boolean bloqueado(Usuario u);
 }
