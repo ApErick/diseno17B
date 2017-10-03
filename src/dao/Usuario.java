@@ -21,6 +21,7 @@ public class Usuario {
     private String pass;
     
     
+    
     public Usuario(){
         this.setNombre("");
         this.setApm("");
@@ -64,37 +65,36 @@ public class Usuario {
         return pass;
     }
     
-    private void setNombre(String n) {
+    public void setNombre(String n) {
         this.nombre=n;
     }
 
-    private void setApm(String am) {
+    public void setApm(String am) {
         this.ApMat=am;
     }
 
-    private void setApp(String ap) {
+    public void setApp(String ap) {
         this.ApPat=ap;
     }
 
-    private void setCorreo(String c) {
+    public void setCorreo(String c) {
         this.Correo=c;
     }
 
-    private void setEdad(int e) {
+    public void setEdad(int e) {
         this.edad=e;
     }
 
-    private void setFace(String f) {
+    public void setFace(String f) {
         this.Face=f;
     }
 
-    private void setUser(String us) {
+    public void setUser(String us) {
         this.User=us;
     }
 
-    private void setPass(String pas) {
+    public void setPass(String pas) {
         this.pass=pas;
     }
     
-
 }
