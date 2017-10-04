@@ -19,6 +19,7 @@ public class Usuario {
     private String Face;
     private String User;
     private String pass;
+    private int bloqueado;
     
     
     
@@ -65,6 +66,10 @@ public class Usuario {
         return pass;
     }
     
+    public int getBloqueado(){
+        return bloqueado;
+    }
+    
     public void setNombre(String n) {
         this.nombre=n;
     }
@@ -95,6 +100,10 @@ public class Usuario {
 
     public void setPass(String pas) {
         this.pass=pas;
+    }
+
+    public void setBloqueado(int bloq) {
+        this.bloqueado=bloq;
     }
     
 }

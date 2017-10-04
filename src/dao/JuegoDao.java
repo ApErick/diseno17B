@@ -11,8 +11,8 @@ package dao;
  */
 public interface JuegoDao {
     
-    public void creaJuego(String nj);
-    public boolean validanomjue(String nj);
-    public void eliminajuego(String nj);
+    public void creaJuego(Juego nj);
+    public boolean buscanomjue(Juego nj);
+    public void eliminajuego(Juego nj);
     
 }

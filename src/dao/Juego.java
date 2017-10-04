@@ -5,18 +5,24 @@
  */
 package dao;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author wildc
  */
-public interface RecordDao {
+public class Juego {
+
+    private String nJuego;
     
+    public Juego(){
+        this.setNJuego("");
+    }
     
-    public void guardaRecord(int r,String user, String idj);
-    public ArrayList[] Topten(int idj);
-    //agregar borrar record que pase un usuario y borre sus records
-    
+    public String getNJuego(){
+        return nJuego;
+    }
+
+    public void setNJuego(String n) {
+        this.nJuego = n;
+    }
     
 }
