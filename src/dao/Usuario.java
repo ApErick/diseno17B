@@ -28,7 +28,7 @@ public class Usuario {
         this.setApm("");
         this.setApp("");
         this.setCorreo("");
-        this.setEdad(10);
+        
         this.setFace("");
         this.setUser("");
         this.setPass("");
@@ -87,7 +87,12 @@ public class Usuario {
     }
 
     public void setEdad(int e) {
-        this.edad=e;
+        if(e>0){
+            this.edad=e;
+        }else{
+            throw new RuntimeException();
+        }
+        
     }
 
     public void setFace(String f) {
